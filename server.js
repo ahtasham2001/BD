@@ -17,3 +17,8 @@ app.get('/singup',(req,res)=>{
 app.get('/blog',(req,res)=>{
     res.send("Blog Post")
 })
+app.get('*',(req,res)=>{
+    res.send("Page not Found")
+})
+
+
